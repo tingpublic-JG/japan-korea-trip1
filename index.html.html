@@ -15,7 +15,7 @@ body{font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;background:var(-
 nav.top{position:sticky;top:0;z-index:100;background:rgba(250,249,246,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--bd);display:flex;overflow-x:auto;padding:0 12px}
 nav.top a{padding:10px 13px;font-size:.79rem;font-weight:600;color:var(--ink2);white-space:nowrap;text-decoration:none;border-bottom:3px solid transparent;border-top:none;border-left:none;border-right:none}
 nav.top a:hover{color:var(--ink);border-bottom-color:var(--jp)}
-html{scroll-behavior:smooth;scroll-padding-top:46px}
+html{scroll-behavior:auto}
 .wrap{max-width:900px;margin:0 auto;padding:0 16px 80px}
 .sec{font-size:1.2rem;font-weight:700;color:var(--ink);margin:44px 0 16px;padding-bottom:9px;border-bottom:2.5px solid var(--ink);display:flex;align-items:center;gap:9px}
 .day{border-radius:9px;padding:13px 18px;margin:26px 0 13px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
@@ -78,14 +78,14 @@ hr.sep{border:none;border-top:1px solid var(--bd);margin:34px 0}
 </div>
 
 <nav class="top">
-  <a href="#flights">✈️ 機票</a>
-  <a href="#hotels">🏨 住宿</a>
-  <a href="#car">🚗 租車</a>
-  <a href="#exchange">💰 換錢</a>
-  <a href="#mapcode">🗺️ Mapcode</a>
-  <a href="#busan">🇰🇷 釜山行程</a>
-  <a href="#hokkaido">🇯🇵 北海道行程</a>
-  <a href="#daegu">🇰🇷 大邱行程</a>
+  <a href="javascript:void(0)" onclick="goTo('flights')">✈️ 機票</a>
+  <a href="javascript:void(0)" onclick="goTo('hotels')">🏨 住宿</a>
+  <a href="javascript:void(0)" onclick="goTo('car')">🚗 租車</a>
+  <a href="javascript:void(0)" onclick="goTo('exchange')">💰 換錢</a>
+  <a href="javascript:void(0)" onclick="goTo('mapcode')">🗺️ Mapcode</a>
+  <a href="javascript:void(0)" onclick="goTo('busan')">🇰🇷 釜山行程</a>
+  <a href="javascript:void(0)" onclick="goTo('hokkaido')">🇯🇵 北海道行程</a>
+  <a href="javascript:void(0)" onclick="goTo('daegu')">🇰🇷 大邱行程</a>
 </nav>
 
 <div class="wrap">
@@ -316,9 +316,9 @@ hr.sep{border:none;border-top:1px solid var(--bd);margin:34px 0}
       <tr style="background:#e3f2fd"><td style="padding:4px 8px;font-weight:600">步驟</td><td style="padding:4px 8px;font-weight:600">搭乘工具</td><td style="padding:4px 8px;font-weight:600">乘車站/下車站</td><td style="padding:4px 8px;font-weight:600">費用 / 時間</td></tr>
       <tr style="border-bottom:1px solid #ddd"><td style="padding:4px 8px">①</td><td style="padding:4px 8px">🚶 步行</td><td style="padding:4px 8px">入境大廳 → 地下 1F JR 售票機/自動閘機</td><td style="padding:4px 8px">5 分鐘</td></tr>
       <tr style="border-bottom:1px solid #ddd"><td style="padding:4px 8px">②</td><td style="padding:4px 8px">🚃 JR 快速エアポート<br>（Airport快速列車）</td><td style="padding:4px 8px">新千歲空港駅 → JR 札幌駅</td><td style="padding:4px 8px">¥1,150（約 37 分）每 15 分一班</td></tr>
-      <tr style="border-bottom:1px solid #ddd"><td style="padding:4px 8px">③</td><td style="padding:4px 8px">🚶 步行</td><td style="padding:4px 8px">JR 札幌駅 → 地下鐵さっぽろ駅</td><td style="padding:4px 8px">步行 5 分（連通地下道）</td></tr>
-      <tr style="border-bottom:1px solid #ddd"><td style="padding:4px 8px">④</td><td style="padding:4px 8px">🚇 地下鐵南北線</td><td style="padding:4px 8px">さっぽろ駅 → すすきの駅</td><td style="padding:4px 8px">¥210（約 4 分）</td></tr>
-      <tr><td style="padding:4px 8px">⑤</td><td style="padding:4px 8px">🚶 步行</td><td style="padding:4px 8px">すすきの駅 → Randor Hotel（南7条西4丁目）</td><td style="padding:4px 8px">步行約 7 分</td></tr>
+      <tr style="border-bottom:1px solid #ddd"><td style="padding:4px 8px">③</td><td style="padding:4px 8px">🚶 步行</td><td style="padding:4px 8px">JR 札幌駅（JR 札幌站）→ 地下鐵 N06 さっぽろ駅（地下鐵札幌站）</td><td style="padding:4px 8px">步行 5 分（連通地下道）</td></tr>
+      <tr style="border-bottom:1px solid #ddd"><td style="padding:4px 8px">④</td><td style="padding:4px 8px">🚇 地下鐵南北線（Namboku Line）</td><td style="padding:4px 8px">N06 さっぽろ駅（札幌站）→ N08 すすきの駅（薄野站）</td><td style="padding:4px 8px">¥210（約 4 分）</td></tr>
+      <tr><td style="padding:4px 8px">⑤</td><td style="padding:4px 8px">🚶 步行</td><td style="padding:4px 8px">N08 すすきの駅（薄野站）→ Randor Hotel（南7条西4丁目）</td><td style="padding:4px 8px">步行約 7 分</td></tr>
     </table>
     💳 <strong>是否全程用西瓜卡（Suica）？</strong> ✅ <strong>可以！</strong>JR 快速エアポート + 地下鐵南北線 均支援西瓜卡/交通系 IC 卡（Suica、PASMO 皆通用）。機場內 JR 閘機前有 Suica 加值機。<br>
     ⏱️ <strong>全程約 55–65 分鐘｜總費用 ¥1,360/人</strong>
@@ -343,7 +343,7 @@ hr.sep{border:none;border-top:1px solid var(--bd);margin:34px 0}
   <tr><td>🍫 白色戀人公園</td><td><span class="mc" data-code="9603301*88">9 603 301*88</span> <span class="excel-badge">EXCEL</span>　📍 北海道札幌市西区宮の沢2条2丁目11-36　📞 011-666-1481<br><a href="https://www.google.com/maps/search/白い恋人パーク+札幌+宮の沢2条2丁目11-36" target="_blank">Google Map</a></td></tr>
   <tr><td>🛍️ Ario 札幌</td><td><span class="mc" data-code="9554206*03">9 554 206*03</span> <span class="excel-badge">EXCEL</span>　📍 北海道札幌市東区北7条東9丁目2-20　📞 011-723-1111<br><a href="https://www.google.com/maps/search/Ario+札幌+北7条東9丁目" target="_blank">Google Map</a></td></tr>
   <tr><td>🦌 羊之丘展望台</td><td><span class="mc" data-code="9287533*30">9 287 533*30</span> <span class="excel-badge">EXCEL</span>　📍 北海道札幌市豊平区羊ケ丘1　📞 011-851-3080<br><a href="https://www.google.com/maps/place/羊ヶ丘展望台" target="_blank">Google Map</a></td></tr>
-  <tr><td>🗿 頭大仏・真駒內瀧野靈園</td><td><span class="mc" data-code="9045078*51">9 045 078*51</span> <span class="excel-badge">EXCEL</span>　📍 北海道札幌市南区滝野2　📞 011-592-1223<br><a href="https://www.google.com/maps/search/真駒内滝野霊園+頭大仏+札幌" target="_blank">Google Map</a></td></tr>
+  <tr><td>🏘️ 北海道開拓の村<br>（歷史村）</td><td><span class="mc" data-code="9479413*44">9 479 413*44</span> <span class="excel-badge">EXCEL</span>　📍 Konopporo-50-1 Atsubetsucho, Atsubetsu Ward, Sapporo 004-0006　📞 011-898-2692<br><a href="https://maps.app.goo.gl/NwqEBdmAR3Xv9dXH9" target="_blank">Google Map</a></td></tr>
   <tr><td>🌲 森林精靈露台<br>（ニングルテラス）</td><td><span class="mc" data-code="919553393*85">919 553 393*85</span> <span class="excel-badge">EXCEL</span>　📍 北海道富良野市中御料（新富良野プリンスホテル内）　📞 0167-22-1111<br><a href="https://www.google.com/maps/search/ニングルテラス+富良野" target="_blank">Google Map</a></td></tr>
   <tr><td>🌸 四季彩之丘</td><td><span class="mc" data-code="349701216*03">349 701 216*03</span> <span class="excel-badge">EXCEL</span>　📞 0166-95-2758<br>📍 北海道上川郡美瑛町新星第三　<a href="https://maps.app.goo.gl/nRfZbZ2nYrMew46L7" target="_blank">Google Map</a></td></tr>
   <tr><td>🌺 富田農場（富良野）</td><td><span class="mc" data-code="349276837*25">349 276 837*25</span> <span class="excel-badge">EXCEL</span>　📍 15 Kisenkita, Nakafurano, Sorachi District, Hokkaido 071-0704<br><a href="https://maps.app.goo.gl/ghyirvopdnfaX1tb7" target="_blank">Google Map</a></td></tr>
@@ -428,8 +428,8 @@ hr.sep{border:none;border-top:1px solid var(--bd);margin:34px 0}
 
 <div class="day jp"><span class="dn">Day 6</span><span class="dd">6/7（日）</span><span class="dt2">白色戀人＋頭大仏＋羊之丘＋森林精靈露台 → 取車 → 美瑛住宿</span></div>
 <div class="alert warn"><strong>⚠️ 今日 09:00 前往 World Net Rent-A-Car 札幌營業所取車！</strong>帶妥：台灣駕照正本＋日文譯本＋護照＋預約確認信＋信用卡</div>
-<div class="alert info"><strong>📍 今日路線（由北往南，最後往東到美瑛）：</strong>
-札幌取車 → ①白色戀人（宮の沢，西區）→ ②頭大仏（滝野，南區）→ ③羊之丘（豊平區）→ ④森林精靈露台（富良野）→ 美瑛住宿（北上）｜全程約 250km，需早出發
+<div class="alert info"><strong>📍 今日路線（西→東→東南往美瑛）：</strong>
+札幌取車（東区）→ ①白色戀人（宮の沢，西區）→ ②北海道開拓の村（厚別区，東區）→ ③森林精靈露台（富良野）→ 美瑛住宿｜全程約 260km，需早出發
 </div>
 <table class="sched">
   <tr><td class="tm">09:00</td><td class="ac">🚗 World Net 札幌營業所取車<br>
@@ -447,17 +447,14 @@ hr.sep{border:none;border-top:1px solid var(--bd);margin:34px 0}
     <a href="https://www.google.com/maps/search/白い恋人パーク+札幌+宮の沢2条2丁目11-36" target="_blank">📍 Google Map</a>｜📞 011-666-1481<br>
     ⏰ 10:00–18:00（最終入場 16:30）｜🎫 ¥800/人｜⏱️ 約 1.5 小時
   </td></tr>
-  <tr><td class="tm">12:00</td><td class="ac">🗿 <strong>②頭大仏殿（安藤忠雄）× 真駒內瀧野靈園</strong>｜Mapcode：<span class="mc" data-code="9045078*51">9 045 078*51</span> <span class="excel-badge">EXCEL</span><br>
-    📍 北海道札幌市南区滝野2番地<br>
-    <a href="https://www.google.com/maps/search/真駒内滝野霊園+頭大仏+札幌+南区滝野2" target="_blank">📍 Google Map</a>｜📞 011-592-1223<br>
-    ⏰ 09:00–16:00（4–10 月）｜🆓 免費｜⏱️ 約 1 小時
+  <tr><td class="tm">12:00</td><td class="ac">🏘️ <strong>②北海道開拓の村（北海道歷史村）</strong>｜Mapcode：<span class="mc" data-code="9479413*44">9 479 413*44</span> <span class="excel-badge">EXCEL</span><br>
+    📍 Konopporo-50-1 Atsubetsucho, Atsubetsu Ward, Sapporo, Hokkaido 004-0006<br>
+    <a href="https://maps.app.goo.gl/NwqEBdmAR3Xv9dXH9" target="_blank">📍 Google Map</a>｜📞 011-898-2692<br>
+    ⏰ 09:00–17:00（5–9 月）｜🎫 ¥800/人<br>
+    復原北海道明治時代農村建築群，超過 50 棟古建築，適合輕鬆午餐＋午後散步<br>
+    💰 場內有食堂提供午餐，約 ¥800–1,200/人｜⏱️ 約 1.5–2 小時
   </td></tr>
-  <tr><td class="tm">13:30</td><td class="ac">🌿 <strong>③羊之丘展望台（午餐）</strong>｜Mapcode：<span class="mc" data-code="9287533*30">9 287 533*30</span> <span class="excel-badge">EXCEL</span><br>
-    📍 北海道札幌市豊平区羊ケ丘1<br>
-    <a href="https://www.google.com/maps/place/羊ヶ丘展望台" target="_blank">📍 Google Map</a>｜📞 011-851-3080<br>
-    ⏰ 09:00–17:00｜🎫 ¥600/人｜💰 成吉思汗烤肉午餐約 ¥1,500–2,000/人
-  </td></tr>
-  <tr><td class="tm">15:30</td><td class="ac">🌲 <strong>④森林精靈露台（ニングルテラス）</strong>｜Mapcode：<span class="mc" data-code="919553393*85">919 553 393*85</span> <span class="excel-badge">EXCEL</span><br>
+  <tr><td class="tm">14:30</td><td class="ac">🌲 <strong>③森林精靈露台（ニングルテラス）</strong>｜Mapcode：<span class="mc" data-code="919553393*85">919 553 393*85</span> <span class="excel-badge">EXCEL</span><br>
     📍 北海道富良野市中御料（新富良野プリンスホテル内）<br>
     <a href="https://www.google.com/maps/search/ニングルテラス+富良野+中御料" target="_blank">📍 Google Map</a>｜📞 0167-22-1111<br>
     ⏰ 12:00–20:45（夏季）｜🆓 免費入場｜⏱️ 約 45 分鐘
@@ -509,52 +506,14 @@ hr.sep{border:none;border-top:1px solid var(--bd);margin:34px 0}
   <tr><td class="tm">20:00</td><td class="ac">♨️ 溫泉：白金溫泉泡湯</td></tr>
 </table>
 
-<div class="day jp"><span class="dn">Day 8</span><span class="dd">6/9（二）</span><span class="dt2">積丹半島一日遊 → 小樽住宿</span></div>
-<div class="alert ok">
-  <strong>📍 積丹最佳路線（不繞路！由遠而近回程）：</strong>
-  小樽出發 → ①神威岬（最遠西北端，約 1.5h）→ ②中村屋午餐（5 分）→ ③島武意海岸（10 分）→ ④水中展望船美国漁港（20 分）→ 返回小樽（1.5h）
-</div>
+<div class="day jp"><span class="dn">Day 8</span><span class="dd">6/9（二）</span><span class="dt2">小樽市區遊覽（積丹前哨站）</span></div>
 <table class="sched">
   <tr><td class="tm">07:30</td><td class="ac">🍳 早餐：AONOBI YUYU（含早餐）</td></tr>
-  <tr><td class="tm">08:30</td><td class="ac">🚗 出發前往積丹半島（從白金溫泉出發，先往小樽方向，再往積丹，約 1.5 小時）</td></tr>
-  <tr><td class="tm">10:00</td><td class="ac">🌊 <strong>①神威岬健行</strong>｜Mapcode：<span class="mc" data-code="932583036*47">932 583 036*47</span><br>
-    📍 北海道積丹郡積丹町神岬町<br>
-    <a href="https://www.google.com/maps/place/神威岬" target="_blank">📍 Google Map</a>｜🆓 免費｜⏱️ 健行來回約 40–50 分鐘<br>
-    ⚠️ 遇強風可能關閉，出發前查 <a href="https://www.kamui-misaki.jp" target="_blank">官網</a>
-  </td></tr>
-  <tr><td class="tm">11:30</td><td class="ac">🐟 <strong>②午餐：漁師の店 中村屋</strong>｜Mapcode：<span class="mc" data-code="932686336*28">932 686 336*28</span><br>
-    📍 〒046-0326 北海道積丹郡積丹町日司34-1 <span class="cb" id="cb24">複製</span><br>
-    <a href="https://www.google.com/maps/search/漁師の店+中村屋+積丹+日司34-1" target="_blank">📍 Google Map</a>｜📞 0135-44-2004<br>
-    ⏰ 10:00–16:00（夏季）｜💰 海膽丼約 ¥3,500–5,500/人（6 月積丹海膽正當季！）<br>
-    <span style="font-size:.82rem;color:#666">從神威岬開車約 5 分鐘</span>
-  </td></tr>
-  <tr><td class="tm">13:00</td><td class="ac">🏖️ <strong>③島武意海岸（しまむいかいがん）</strong>｜Mapcode：<span class="mc" data-code="932747202*28">932 747 202*28</span><br>
-    📍 北海道積丹郡積丹町入舸町<br>
-    <a href="https://www.google.com/maps/search/島武意海岸+積丹+入舸町" target="_blank">📍 Google Map</a>｜📞 0135-44-3715（積丹観光協会）<br>
-    🆓 免費｜穿過小隧道後豁然開朗的積丹藍絕景<br>
-    ⏱️ 展望台 20 分 ／ 下海岸來回約 40–50 分鐘（高度差 60m）<br>
-    <span style="font-size:.82rem;color:#666">從中村屋開車約 10 分鐘</span>
-  </td></tr>
-  <tr><td class="tm">14:30</td><td class="ac">🚤 <strong>④水中展望船 ニューしゃこたん号（新積丹號）</strong>｜Mapcode：<span class="mc" data-code="775807016*74">775 807 016*74</span><br>
-    📍 北海道積丹郡積丹町美国町船澗（美国漁港）<br>
-    <a href="https://www.google.com/maps/search/水中展望船+ニューしゃこたん+積丹+美国町" target="_blank">📍 Google Map</a>｜📞 0135-44-2455<br>
-    🌐 <a href="https://www.shakotan-glassboat.com" target="_blank">shakotan-glassboat.com</a>｜💰 ¥1,900/人｜⏱️ 約 40 分鐘<br>
-    ⚠️ 風速 8m/s 以上或波高 0.5m 以上時停航<br>
-    <span style="font-size:.82rem;color:#666">從島武意海岸開車約 20 分鐘</span>
-  </td></tr>
-  <tr><td class="tm">16:30</td><td class="ac">🚗 返回小樽（約 1.5 小時）</td></tr>
-  <tr><td class="tm">18:00</td><td class="ac">🏨 Check in Plum House Otaru<br>
+  <tr><td class="tm">08:30</td><td class="ac">🚗 從白金溫泉開車前往小樽（約 50 分，沿 237 號國道）</td></tr>
+  <tr><td class="tm">09:30</td><td class="ac">🏨 Check in Plum House Otaru，寄放行李<br>
     📍 北海道小樽市花園1丁目2-2<br>
     <a href="https://www.google.com/maps/search/Plum+House+Otaru+花園1丁目2-2" target="_blank">📍 Google Map</a>｜⚠️ 自助 Check-in，依確認信操作
   </td></tr>
-  <tr><td class="tm">19:00</td><td class="ac">🍣 晚餐：小樽壽司街或出拔小路<br>
-    推薦：なると屋 📍 北海道小樽市稲穂3丁目16-13 <a href="https://www.google.com/maps/search/なると屋+小樽+稲穂3丁目" target="_blank">Google Map</a>｜💰 約 ¥1,000–2,000/人
-  </td></tr>
-</table>
-
-<div class="day jp"><span class="dn">Day 9</span><span class="dd">6/10（三）</span><span class="dt2">小樽市區遊覽</span></div>
-<table class="sched">
-  <tr><td class="tm">08:00</td><td class="ac">🍳 早餐：Plum House Otaru（含早餐）</td></tr>
   <tr><td class="tm">09:30</td><td class="ac">🚢 <strong>小樽運河散步</strong>｜Mapcode：<span class="mc" data-code="493690414*33">493 690 414*33</span> <span class="excel-badge">EXCEL</span><br>
     <a href="https://maps.app.goo.gl/tUJi15V3uedjXxhg6" target="_blank">📍 Google Map</a>｜🆓 免費｜⏱️ 約 45 分鐘<br>
     🅿️ <strong>超便宜停車場：小樽色內停車場</strong><br>
@@ -581,6 +540,45 @@ hr.sep{border:none;border-top:1px solid var(--bd);margin:34px 0}
     <a href="https://www.google.com/maps/search/天狗山ロープウェイ+小樽+最上2丁目16-15" target="_blank">📍 Google Map</a>｜📞 0134-33-7381<br>
     ✅ <strong>停山麓停車場（免費）→ 搭纜車上山</strong>，避免夜間山路風險<br>
     💰 纜車來回 ¥1,800（大人）｜⏰ 09:00–21:00（末班 20:48）
+  </td></tr>
+</table>
+
+<div class="day jp"><span class="dn">Day 9</span><span class="dd">6/10（三）</span><span class="dt2">積丹半島一日遊</span></div>
+<div class="alert ok">
+  <strong>📍 積丹最佳路線（不繞路！由遠而近回程）：</strong>
+  小樽出發 → ①神威岬（最遠西北端，約 1.5h）→ ②中村屋午餐（5 分）→ ③島武意海岸（10 分）→ ④水中展望船美国漁港（20 分）→ 返回小樽（1.5h）
+</div>
+<table class="sched">
+  <tr><td class="tm">08:00</td><td class="ac">🍳 早餐：Plum House Otaru（含早餐）</td></tr>
+  <tr><td class="tm">09:00</td><td class="ac">🚗 從小樽出發前往積丹半島（沿國道 229 號海岸公路，約 1 小時）</td></tr>
+  <tr><td class="tm">10:00</td><td class="ac">🌊 <strong>①神威岬健行</strong>｜Mapcode：<span class="mc" data-code="932583036*47">932 583 036*47</span><br>
+    📍 北海道積丹郡積丹町神岬町<br>
+    <a href="https://www.google.com/maps/place/神威岬" target="_blank">📍 Google Map</a>｜🆓 免費｜⏱️ 健行來回約 40–50 分鐘<br>
+    ⚠️ 遇強風可能關閉，出發前查 <a href="https://www.kamui-misaki.jp" target="_blank">官網</a>
+  </td></tr>
+  <tr><td class="tm">11:30</td><td class="ac">🐟 <strong>②午餐：漁師の店 中村屋</strong>｜Mapcode：<span class="mc" data-code="932686336*28">932 686 336*28</span><br>
+    📍 〒046-0326 北海道積丹郡積丹町日司34-1 <span class="cb" id="cb24">複製</span><br>
+    <a href="https://www.google.com/maps/search/漁師の店+中村屋+積丹+日司34-1" target="_blank">📍 Google Map</a>｜📞 0135-44-2004<br>
+    ⏰ 10:00–16:00（夏季）｜💰 海膽丼約 ¥3,500–5,500/人（6 月積丹海膽正當季！）<br>
+    <span style="font-size:.82rem;color:#666">從神威岬開車約 5 分鐘</span>
+  </td></tr>
+  <tr><td class="tm">13:00</td><td class="ac">🏖️ <strong>③島武意海岸（しまむいかいがん）</strong>｜Mapcode：<span class="mc" data-code="932747202*28">932 747 202*28</span><br>
+    📍 北海道積丹郡積丹町入舸町<br>
+    <a href="https://www.google.com/maps/search/島武意海岸+積丹+入舸町" target="_blank">📍 Google Map</a>｜📞 0135-44-3715（積丹観光協会）<br>
+    🆓 免費｜穿過小隧道後豁然開朗的積丹藍絕景<br>
+    ⏱️ 展望台 20 分 ／ 下海岸來回約 40–50 分鐘（高度差 60m）<br>
+    <span style="font-size:.82rem;color:#666">從中村屋開車約 10 分鐘</span>
+  </td></tr>
+  <tr><td class="tm">14:30</td><td class="ac">🚤 <strong>④水中展望船 ニューしゃこたん号（新積丹號）</strong>｜Mapcode：<span class="mc" data-code="775807016*74">775 807 016*74</span><br>
+    📍 北海道積丹郡積丹町美国町船澗（美国漁港）<br>
+    <a href="https://www.google.com/maps/search/水中展望船+ニューしゃこたん+積丹+美国町" target="_blank">📍 Google Map</a>｜📞 0135-44-2455<br>
+    🌐 <a href="https://www.shakotan-glassboat.com" target="_blank">shakotan-glassboat.com</a>｜💰 ¥1,900/人｜⏱️ 約 40 分鐘<br>
+    ⚠️ 風速 8m/s 以上或波高 0.5m 以上時停航<br>
+    <span style="font-size:.82rem;color:#666">從島武意海岸開車約 20 分鐘</span>
+  </td></tr>
+  <tr><td class="tm">16:30</td><td class="ac">🚗 返回小樽 Plum House（約 1 小時）</td></tr>
+  <tr><td class="tm">18:00</td><td class="ac">🍣 晚餐：小樽壽司街或出拔小路<br>
+    推薦：なると屋 📍 北海道小樽市稲穂3丁目16-13 <a href="https://www.google.com/maps/search/なると屋+小樽+稲穂3丁目" target="_blank">Google Map</a>｜💰 約 ¥1,000–2,000/人
   </td></tr>
 </table>
 
@@ -620,7 +618,7 @@ hr.sep{border:none;border-top:1px solid var(--bd);margin:34px 0}
       主要班次參考：17:00 / 17:30 / 18:00 / 18:30 / 19:00 / 19:30 / 20:00 / 20:30 / 21:00 / 21:30 / 22:00 / 22:30<br>
       <span style="font-size:.82rem;color:#c62828">⚠️ 班次以現場為準，建議提前至 bustago.or.kr 查詢最新時刻表</span>
     </td></tr>
-    <tr><td>🎫 買票方式</td><td>出機場後右側巴士月台售票機或窗口購票｜亦可線上：<a href="https://www.bustago.or.kr" target="_blank">bustago.or.kr</a></td></tr>
+    <tr><td>🎫 買票方式</td><td>出機場後右側巴士月台售票機或窗口購票｜亦可線上：<a href="https://bustago.or.kr/newweb/cn/ticket/ticket.do" target="_blank">bustago.or.kr（購票）</a></td></tr>
     <tr><td>💰 票價</td><td>約 ₩11,100–16,000/人</td></tr>
     <tr><td>💰 總費用</td><td>約 ₩22,200–32,000（2 人）｜✅ 直達最輕鬆！</td></tr>
   </table>
@@ -675,9 +673,11 @@ hr.sep{border:none;border-top:1px solid var(--bd);margin:34px 0}
     <span class="adr">대구 중구 진골목길 42</span> <span class="cb" id="cb32">複製</span><br>
     🗺️ <a href="https://map.naver.com/p/search/근대골목%20단팥빵%20대구%20중구%20진골목길%2042" target="_blank">Naver Map</a>｜💰 約 ₩2,000/個
   </td></tr>
-  <tr><td class="tm">19:00</td><td class="ac">🐷 <strong>晚餐：安吉朗豬大腸胡同（안지랑막창골목）</strong><br>
-    <span class="adr">대구 남구 안지랑로5길 일대</span> <span class="cb" id="cb33">複製</span><br>
-    🗺️ <a href="https://map.naver.com/p/search/안지랑막창골목%20대구%20남구" target="_blank">Naver Map</a>｜<a href="https://www.google.com/maps/search/안지랑막창골목+대구+남구+안지랑로5길" target="_blank">Google Map</a>｜⏰ 17:00 後開店
+  <tr><td class="tm">19:00</td><td class="ac">🥩 <strong>晚餐：고기굽는남자 동성로 본점（烤肉男子 東城路本店）</strong><br>
+    <span class="adr">대구 중구 동성로3길 32-10</span> <span class="cb" id="cb33">複製</span><br>
+    📞 <span class="tel">053-425-5933</span> <span class="cb" id="cb33b">複製</span><br>
+    🗺️ <a href="https://naver.me/Galdxnsj" target="_blank">Naver Map</a>｜<a href="https://www.google.com/maps/search/고기굽는남자+동성로본점+대구+중구+동성로3길+32-10" target="_blank">Google Map</a><br>
+    💡 距離東城路商圈步行 2 分鐘，住宿附近，韓式烤肉人氣店
   </td></tr>
 </table>
 
@@ -795,7 +795,8 @@ const copyData = {
   cb30: '053-253-4729',
   cb31: '대구 중구 달구벌대로 2166',
   cb32: '대구 중구 진골목길 42',
-  cb33: '대구 남구 안지랑로5길'
+  cb33: '대구 중구 동성로3길 32-10',
+  cb33b: '053-425-5933'
 };
 
 document.querySelectorAll('.cb').forEach(btn => {
@@ -850,20 +851,15 @@ document.querySelectorAll('.mc').forEach(el => {
     el.click();
   });
 });
-// ── 選單平滑滾動（補償 sticky nav 高度）──
-document.querySelectorAll('nav.top a[href^="#"]').forEach(link => {
-  link.addEventListener('click', function(e) {
-    const targetId = this.getAttribute('href').slice(1);
-    const target = document.getElementById(targetId);
-    if (!target) return;
-    e.preventDefault();
-    const nav = document.querySelector('nav.top');
-    const navH = nav ? nav.getBoundingClientRect().height : 44;
-    const extra = 8; // 額外留白
-    const top = target.getBoundingClientRect().top + window.scrollY - navH - extra;
-    window.scrollTo({ top, behavior: 'smooth' });
-  });
-});
+// ── 選單平滑滾動 ──
+function goTo(id) {
+  const target = document.getElementById(id);
+  if (!target) return;
+  const nav = document.querySelector('nav.top');
+  const navH = nav ? nav.getBoundingClientRect().height : 44;
+  const top = target.getBoundingClientRect().top + window.scrollY - navH - 8;
+  window.scrollTo({ top: top, behavior: 'smooth' });
+}
 </script>
 </body>
 </html>
